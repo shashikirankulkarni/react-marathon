@@ -41,3 +41,7 @@ In production mode, compression and minification of Javascript and other resourc
 Async in script tag in JavaScript is a way to load scripts asynchronously. That means, if a script is async, it will be loaded independently of other scripts on the page, and will not block the page from loading.
 
 By using the defer attribute in HTML, the browser will load the script only after parsing (loading) the page. This can be helpful if you have a script that is dependent on other scripts, or if you want to improve the loading time of your page by loading scripts after the initial page load.
+
+If we use Async, HTML parsing continues till Javascript is loaded completely, once it is loaded, HTML parsing stops. Javascript executes completely. Then HTML parsing continues. (Does not Guarantee order of excecution of script. If script is independent of any other scripts then we can use it, eg. Analytics scripts)
+
+In defer, Javascript loads along with HTML parsing, once HTML parsing is completed, then Javascript is executed. (Guarantees order of execution, as scripts excecuted once HTML parsing is done)
