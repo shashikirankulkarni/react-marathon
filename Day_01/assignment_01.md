@@ -46,6 +46,8 @@ If we use Async, HTML parsing continues till Javascript is loaded completely, on
 
 In defer, Javascript loads along with HTML parsing, once HTML parsing is completed, then Javascript is executed. (Guarantees order of execution, as scripts excecuted once HTML parsing is done)
 
+Video Reference: https://www.youtube.com/watch?v=IrHmpdORLu8
+
 # Notes
 
 - Hello World from JS into HTML
