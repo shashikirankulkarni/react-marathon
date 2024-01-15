@@ -45,3 +45,75 @@ By using the defer attribute in HTML, the browser will load the script only afte
 If we use Async, HTML parsing continues till Javascript is loaded completely, once it is loaded, HTML parsing stops. Javascript executes completely. Then HTML parsing continues. (Does not Guarantee order of excecution of script. If script is independent of any other scripts then we can use it, eg. Analytics scripts)
 
 In defer, Javascript loads along with HTML parsing, once HTML parsing is completed, then Javascript is executed. (Guarantees order of execution, as scripts excecuted once HTML parsing is done)
+
+# Notes
+
+- Hello World from JS into HTML
+- Browsers have JavaScript Engine i.e V8 which understands the JS code such as document, createElement, appendChild etc.
+- Browser does not understand React
+- Read CDN
+- Read CORS -> The browser's same-origin policy blocks reading a resource from a different origin.
+- React is a JavaScript library
+- Hello World From React
+- ReactElement is a object
+- While it is rendering into DOM, React object is converted into element
+
+Nested React Elements using create element
+```
+/*
+<div id = "parent">
+    <div id="child">
+        <h1>Nested heading</h1>
+        <h2>Nested sibling heading</h2>
+    </div>
+</div>
+*/
+```
+
+```
+const parent = React.createElement(
+  "div",
+  { id: "parent" },
+  React.createElement(
+    "div",
+    { id: "child" },
+    [
+    React.createElement("h1", { id: "heading", key: '0' }, "Nested Heading"),
+    React.createElement("h2", { id: "heading2", key: '1' }, "Nested sibling heading")
+    ]
+  )
+);
+```
+
+```
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent);
+```
+
+- Content present in the root of the html will be replaced by React
+- Elements present above and below root div will stay as it is.
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome To React</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Heading Top of the Root</h1>
+    <div id="root"></div>
+    <h1>Heading below of the Root</h1>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="./App.js"></script>
+  </body>
+</html>
+```
