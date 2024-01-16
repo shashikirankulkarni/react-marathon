@@ -12,5 +12,7 @@
 - Normal dependency is used in production also.
 - ^2.11.0 - ^ updates only minor upgrades in the version automatically. (Safe Choice)
 - ~2.11.0 - ~ updates major upgrades automatically.
-- package-lock.json: Keeps tack of exact version of the package
+- package-lock.json: Keeps tack of exact version of the package, it contains the all the configurations of transitive dependencies. 
 - package-lock.json has key called integrity which has value of hash code. This hashcode is used to maintain same version of package that is being used in both local and production.
+- node_modules is the code fetched from npm for our dependencies.
+- node modules can have their own dependencies hence called as Transitive Dependencies.
