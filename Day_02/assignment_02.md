@@ -1,0 +1,16 @@
+# Notes
+- React does not make our application fast, there are many packages to use which makes React app fast, scalable and production ready.
+- npm is not node package manager. It manages packages.
+- package.json is configuration for nmp.
+- npm init will initalize the the configuration and creates package.json file.
+- One of the important package in project is Bundler.
+- As we have HTML, CSS, JS these files have to be bundled, minified, compressed, cached, cleaned before moving to production. Eg. Webpack, Parcel, Vite.
+- Create React App uses React Webpack and Babel behind the scenes.
+- npm install -D parcel, D stands for dev dependency.
+- Two types of Dependency - Dev dependency and Normal dependency.
+- Dev dependency is required during development of the app.
+- Normal dependency is used in production also.
+- ^2.11.0 - ^ updates only minor upgrades in the version automatically. (Safe Choice)
+- ~2.11.0 - ~ updates major upgrades automatically.
+- package-lock.json: Keeps tack of exact version of the package
+- package-lock.json has key called integrity which has value of hash code. This hashcode is used to maintain same version of package that is being used in both local and production.

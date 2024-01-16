@@ -1,0 +1,26 @@
+{
+  "name": "day_02",
+  "version": "1.0.0",
+  "description": "This is Day 2 of React Marathon",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashikirankulkarni/react-marathon.git"
+  },
+  "keywords": [
+    "react",
+    "react-marathon"
+  ],
+  "author": "Shashikiran Kulkarni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashikirankulkarni/react-marathon/issues"
+  },
+  "homepage": "https://github.com/shashikirankulkarni/react-marathon#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
