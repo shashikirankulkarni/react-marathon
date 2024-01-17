@@ -16,3 +16,28 @@
 - package-lock.json has key called integrity which has value of hash code. This hashcode is used to maintain same version of package that is being used in both local and production.
 - node_modules is the code fetched from npm for our dependencies.
 - node modules can have their own dependencies hence called as Transitive Dependencies.
+- npx parcel index.html
+- npx is executing a package
+- npm install react
+- npm install react-dom
+### Features of Parcel
+- Hot Module Replacement
+- Dev build, Local Server
+- File Watching Algorithm (C++)
+- Caching - Faster builds
+- Image Optimization
+- Minification
+- Bundling
+- Compressing
+- Consistant Hashing
+- Code Splitting
+- Differential Bundling - Provides supports for older browsers versions
+- Diagnostics
+- Error handling
+- HTTPS Support
+- Tree Shaking - Remove Unused Code
+- Different Dev and Production bundle
+
+- npx parcel build index.html - Creates Production Build
+- main: in package.json is the entry point to the app
+
