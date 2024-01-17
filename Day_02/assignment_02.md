@@ -37,7 +37,7 @@
 - HTTPS Support
 - Tree Shaking - Remove Unused Code
 - Different Dev and Production bundle
-
+##
 - npx parcel build index.html - Creates Production Build
 - main: in package.json is the entry point to the app
-
+- Browserslist: browserslist is a configuration file that determines which browsers your project should support.
